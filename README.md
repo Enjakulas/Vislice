@@ -1,4 +1,4 @@
 # Vislice
-Jurij Vega
+Borut Pahor
 Ivo Lah
 Josip Plemelj
