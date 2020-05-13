@@ -3,26 +3,26 @@ import model
 def izpis_igre(igra):
     return (
         "Pravilni del gesla: {}\n".format(igra.pravilni_del_gesla()) +
-        "Neuspeli poskuso: {}\n".format(igra.nepravilni_ugibi()) +
+        "Neuspeli poskusi: {}\n".format(igra.nepravilni_ugibi()) +
         "Število preostalih poskusov: {}\n".format(model.STEVILO_DOVOLJENIH_NAPAK - igra.stevilo_napak())
     )
 
 def izpis_zmage(igra):
     return (
-        "Čestitam, uganilsi geslo {}\n".format(igra.geslo) +
+        "Čestitam, uganil si geslo {}\n".format(igra.geslo) +
         "Uspelo ti je v {} poskusih\n".format(len(igra.crke))
     )
 
 def izpis_poraza(igra):
     return (
-        "Porabil si vse poskuse \n" +
+        "Porabil si vse poskuse.\n" +
         "Pravilo geslo je bilo {}\n".format(igra.geslo)
     )
 
 def zahtevaj_vnos():
     return input('Vnesi črko: ')
 
-def pozeni_umesnik():
+def pozeni_vmesnik():
     igra = model.nova_igra()
     while True:
         print(izpis_igre(igra))
@@ -34,5 +34,9 @@ def pozeni_umesnik():
         elif stanje == model.PORAZ:
             print(izpis_poraza(igra))
             break
+
+# pri pozeni umesnik naredi se moznost da gre igro šeenkrat
+# ali zelis nasledno igro utipkaj ja aline
+#v izpisu igre se slikica
 
 pozeni_vmesnik()
