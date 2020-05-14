@@ -22,6 +22,13 @@ def izpis_poraza(igra):
 def zahtevaj_vnos():
     return input('Vnesi črko: ')
 
+def ponovna_igra():
+    vnos = input("Želite igrati ponovno? Zapiši da / ne: ")
+    vnos = vnos.upper()
+    if vnos == "DA":
+        pozeni_vmesnik()
+
+
 def pozeni_vmesnik():
     igra = model.nova_igra()
     while True:
@@ -34,6 +41,7 @@ def pozeni_vmesnik():
         elif stanje == model.PORAZ:
             print(izpis_poraza(igra))
             break
+    ponovna_igra()
 
 # pri pozeni umesnik naredi se moznost da gre igro šeenkrat
 # ali zelis nasledno igro utipkaj ja aline
