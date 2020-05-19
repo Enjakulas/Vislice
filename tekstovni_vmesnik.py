@@ -43,8 +43,4 @@ def pozeni_vmesnik():
             break
     ponovna_igra()
 
-# pri pozeni umesnik naredi se moznost da gre igro šeenkrat
-# ali zelis nasledno igro utipkaj ja aline
-#v izpisu igre se slikica
-
 pozeni_vmesnik()
