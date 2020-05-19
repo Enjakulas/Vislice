@@ -22,6 +22,7 @@ def izpis_poraza(igra):
 def zahtevaj_vnos():
     return input('Vnesi črko: ')
 
+
 def ponovna_igra():
     vnos = input("Želite igrati ponovno? Zapiši da / ne: ")
     vnos = vnos.upper()
